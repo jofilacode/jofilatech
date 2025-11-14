@@ -180,3 +180,40 @@
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
+.project-img-wrapper {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-img-wrapper img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.click-note {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(27, 115, 232, 0.85);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+
+.project-img-wrapper:hover .click-note {
+  background: rgba(27, 115, 232, 1);
+}
+
