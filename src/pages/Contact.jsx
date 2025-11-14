@@ -60,8 +60,8 @@ export default function Contact() {
 
         <div className="contact-card">
           <FaLinkedinIn className="icon linkedin" />
-          <a href="https://linkedin.com/in/jofilatech" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/jofilatech
+          <a href="https://linkedin.com/in/gabriel-shobande-261a05301" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/gabriel-shobande-261a05301
           </a>
         </div>
       </div>

@@ -3,23 +3,19 @@ import '../styles/gallery.css';
 const galleryItems = [
   {
     src: '/gallery/1.jpg',
-    caption: 'Speaking at Lagos Dev Meetup 2024'
+    caption: 'Speaking on Building Scalable Database Architecture for Startups, 2024'
   },
   {
     src: '/gallery/3.jpg',
-    caption: 'Collaborating with other Blockchain Engineers'
+    caption: 'The Role of Databases in Crypto Apps and Web3 Projects : On-chain vs off-chain data'
   },
   {
     src: '/gallery/4.jpg',
-    caption: 'AI & Robotics Showcase, Abuja'
+    caption: 'Unveiling transformative AI tools and robotics technologies shaping tomorrow’s digital world.'
   },
   {
     src: '/gallery/5.jpg',
-    caption: 'Open Source Community Contribution Meetup'
-  },
-  {
-    src: '/gallery/6.jpg',
-    caption: 'Backend Dev Summit, 2023'
+    caption: 'Marathon coding mode: completed. Short recharge before the next Web3 breakthrough.'
   }
 ];
 
