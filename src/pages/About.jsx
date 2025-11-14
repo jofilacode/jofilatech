@@ -11,7 +11,7 @@ export default function About() {
             I'm a passionate and results-driven <strong>Full-Stack & Web3 Developer</strong> with over 
             <strong>10 years of experience</strong> building secure, scalable, and high-performance digital solutions. 
             I specialize in modern <strong>web, app, and desktop development</strong>, as well as creating 
-            <strong> blockchain-powered platforms</strong> that combine usability with cutting-edge innovation. 
+            <nbsp/> <strong> blockchain-powered platforms</strong> that combine usability with cutting-edge innovation. 
           </p>
           <p>
             My expertise includes <strong>React, Node.js, ASP.NET Core, MongoDB, PostgreSQL, SQL Server</strong>, 
@@ -55,4 +55,5 @@ export default function About() {
     </section>
   );
 }
+
 
