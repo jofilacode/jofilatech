@@ -7,17 +7,14 @@ export default function Projects() {
   const [currentImg, setCurrentImg] = useState('');
 
   const projects = [
-   
-        { title: "Samkoko Media", description: "NGO / corporate media initiative: Building A Wealthy Society.", stack: "React, Node.js, Firebase", image: "/images/Samkokomedia.png", live: "https://samkokomedia.netlify.app/" },
-          { title: "ITranquilcare", description: "Medical Health Care system – Canada.", stack: "Asp.net, C#, SQL", image: "/images/itranquilcare.png", live: "itranquilcare.com" },
+    { title: "Samkoko Media", description: "NGO / corporate media initiative: Building A Wealthy Society.", stack: "React, Node.js, Firebase", image: "/images/Samkokomedia.png", live: "https://samkokomedia.netlify.app/" },
+    { title: "ITranquilcare", description: "Medical Health Care system – Canada.", stack: "Asp.net, C#, SQL", image: "/images/itranquilcare.png", live: "itranquilcare.com" },
     { title: "Bank Management Website", description: "Secure banking & financial management system.", stack: "Asp.net, C#, SQL", image: "/images/bank.png", live: "#" },
     { title: "IWC Prelaunch Coin / Wallet DApp", description: "Prelaunch for the IWC crypto coin, including wallet integration.", stack: "React, Node.js, Web3.js, Solidity", image: "/images/iwcprelaunch.png", live: "https://prelaunch.iwcpay.com/" },
     { title: "Celebrity Management Website", description: "Platform for celebrity actors management, including bookings.", stack: "React, Node.js, MongoDB", image: "/images/celebrity.png", live: "https://celebmanagement.netlify.app/" },
     { title: "AdultBadies Dating Site", description: "Romance meet-up chat website.", stack: "React, Node.js", image: "/images/adultbadies.png", live: "https://adultbadies.netlify.app/" },
-
     { title: "Airdrop for IWC", description: "Airdrop crypto project for the IWC coin.", stack: "Solidity, React, Web3.js", image: "/images/iwcairdrop.png", live: "https://airdrop.iwcpay.com/" },
     { title: "HODL Meme Coin", description: "Meme-powered crypto coin emphasizing long-term holding.", stack: "Solidity, React, Web3.js", image: "/images/hodlmeme.png", live: "https://hodlmeme.netlify.app/" },
-  
     { title: "Loan Website", description: "Financial services platform for loan management.", stack: "React, Node.js, PostgreSQL", image: "/images/loan.png", live: "#" },
     { title: "CBT Software", description: "Computer Based Test platform for schools & institutions.", stack: "React, Node.js, MongoDB", image: "/images/cbt.png", live: "#" },
     { title: "Elearning Portal", description: "Online learning management portal for students & teachers.", stack: "Asp.net, C#, SQL", image: "/images/elearning.png", live: "#" },
@@ -45,8 +42,9 @@ export default function Projects() {
       <div className="project-grid">
         {projects.map((p, i) => (
           <div className="project-card" key={i}>
-            <div className="project-img" onClick={() => openModal(p.image)}>
+            <div className="project-img-wrapper" onClick={() => openModal(p.image)}>
               <img src={p.image} alt={p.title} />
+              <span className="click-note">Click to view</span>
             </div>
             <div className="project-content">
               <h3>{p.title}</h3>
