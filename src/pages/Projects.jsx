@@ -51,7 +51,7 @@ export default function Projects() {
               <p className="project-desc">{p.description}</p>
               <p className="project-stack"><strong>Tech:</strong> {p.stack}</p>
               <div className="project-links">
-                <a href={p.live} target="_blank" rel="noreferrer">{p.live === "#" ? "Request for Demo" : "🌐 Live Demo"}</a>
+                <a href={p.live} target="_blank" rel="noreferrer">{p.live === "#" ? "Request for Demo" : "🌐 Live View"}</a>
                 <a
                   href={`https://wa.me/2348132571643?text=Hi%20Jofilatech%2C%20I%20am%20interested%20in%20your%20project:%20${encodeURIComponent(p.title)}`}
                   className="btn whatsapp-btn"
@@ -83,4 +83,5 @@ export default function Projects() {
     </section>
   );
 }
+
 
